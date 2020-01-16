@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Keyteki.Web", "Keyteki.Web\Keyteki.Web.csproj", "{BD013837-085A-4EC9-95D7-7B17519C6131}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Submodules", "Submodules", "{8BFB9AF1-875C-4B5E-85AE-9959DDBB0994}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CrimsonDev.Gameteki.Api", "Gameteki.Api\Gameteki.Api\CrimsonDev.Gameteki.Api.csproj", "{1B2F0CB0-DBE2-456D-B47B-356F9EAB6E72}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Keyteki.Data", "Keyteki.Data\Keyteki.Data\Keyteki.Data.csproj", "{08072AF0-C635-4977-AAE4-548DB3458AF2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{3C6BFED5-B372-4758-8DBF-CAA516551C8A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CrimsonDev.Gameteki.Data", "Gameteki.Api\Gameteki.Data\CrimsonDev.Gameteki.Data.csproj", "{D1BDFE05-172C-4E83-BAD8-5E9ADBC5581F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{9232E925-FF78-42CB-BBF0-F330A93568B8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CrimsonDev.Gameteki.Data", "Keyteki.Data\Gameteki.Data\CrimsonDev.Gameteki.Data.csproj", "{87BBB0E5-9CF4-4C5F-9EAA-F8B16B2DCD20}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD013837-085A-4EC9-95D7-7B17519C6131}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD013837-085A-4EC9-95D7-7B17519C6131}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD013837-085A-4EC9-95D7-7B17519C6131}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD013837-085A-4EC9-95D7-7B17519C6131}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B2F0CB0-DBE2-456D-B47B-356F9EAB6E72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B2F0CB0-DBE2-456D-B47B-356F9EAB6E72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B2F0CB0-DBE2-456D-B47B-356F9EAB6E72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B2F0CB0-DBE2-456D-B47B-356F9EAB6E72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08072AF0-C635-4977-AAE4-548DB3458AF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08072AF0-C635-4977-AAE4-548DB3458AF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08072AF0-C635-4977-AAE4-548DB3458AF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08072AF0-C635-4977-AAE4-548DB3458AF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1BDFE05-172C-4E83-BAD8-5E9ADBC5581F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1BDFE05-172C-4E83-BAD8-5E9ADBC5581F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1BDFE05-172C-4E83-BAD8-5E9ADBC5581F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1BDFE05-172C-4E83-BAD8-5E9ADBC5581F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87BBB0E5-9CF4-4C5F-9EAA-F8B16B2DCD20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87BBB0E5-9CF4-4C5F-9EAA-F8B16B2DCD20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87BBB0E5-9CF4-4C5F-9EAA-F8B16B2DCD20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87BBB0E5-9CF4-4C5F-9EAA-F8B16B2DCD20}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1B2F0CB0-DBE2-456D-B47B-356F9EAB6E72} = {3C6BFED5-B372-4758-8DBF-CAA516551C8A}
+		{08072AF0-C635-4977-AAE4-548DB3458AF2} = {9232E925-FF78-42CB-BBF0-F330A93568B8}
+		{3C6BFED5-B372-4758-8DBF-CAA516551C8A} = {8BFB9AF1-875C-4B5E-85AE-9959DDBB0994}
+		{D1BDFE05-172C-4E83-BAD8-5E9ADBC5581F} = {3C6BFED5-B372-4758-8DBF-CAA516551C8A}
+		{9232E925-FF78-42CB-BBF0-F330A93568B8} = {8BFB9AF1-875C-4B5E-85AE-9959DDBB0994}
+		{87BBB0E5-9CF4-4C5F-9EAA-F8B16B2DCD20} = {9232E925-FF78-42CB-BBF0-F330A93568B8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FD59013B-BCDB-415D-9BF5-3423A848773A}
+	EndGlobalSection
+EndGlobal

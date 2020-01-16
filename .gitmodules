@@ -1,0 +1,6 @@
+[submodule "Gameteki.Api"]
+	path = Gameteki.Api
+	url = https://github.com/Gameteki/Gameteki.Api.git
+[submodule "Keyteki.Data"]
+	path = Keyteki.Data
+	url = https://github.com/keyteki/Keyteki.Data.git
