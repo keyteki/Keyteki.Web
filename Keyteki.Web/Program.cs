@@ -9,7 +9,7 @@ namespace Keyteki.Web
     using Microsoft.Extensions.Logging;
     using NLog.Web;
 
-    public class Program
+    public static class Program
     {
         public static void Main(string[] args)
         {
@@ -50,7 +50,7 @@ namespace Keyteki.Web
             }
         }
 
-        public static IHostBuilder CreateHostBuilder(string[] args) =>
+        private static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {

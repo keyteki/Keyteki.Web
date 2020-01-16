@@ -8,6 +8,7 @@ namespace Keyteki.Web
     using Keyteki.Web.Services;
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Hosting;
+    using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
     using Microsoft.EntityFrameworkCore;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
@@ -42,6 +43,11 @@ namespace Keyteki.Web
 
             services.AddTransient<IKeytekiDbContext, KeytekiDbContext>();
             services.AddTransient<IUserService, KeytekiUserService>();
+
+            services.AddSpaStaticFiles(configuration =>
+            {
+                configuration.RootPath = "ClientApp/build";
+            });
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -60,6 +66,16 @@ namespace Keyteki.Web
             app.UseStaticFiles();
             app.UseHttpsRedirection();
             app.UseAuthentication();
+
+            app.UseSpa(spa =>
+            {
+                spa.Options.SourcePath = "ClientApp";
+
+                if (env.IsDevelopment())
+                {
+                    spa.UseReactDevelopmentServer(npmScript: "start");
+                }
+            });
         }
     }
 }

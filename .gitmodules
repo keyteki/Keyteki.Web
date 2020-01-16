@@ -4,3 +4,6 @@
 [submodule "Keyteki.Data"]
 	path = Keyteki.Data
 	url = https://github.com/keyteki/Keyteki.Data.git
+[submodule "Keyteki.Web/ClientApp"]
+	path = Keyteki.Web/ClientApp
+	url = https://github.com/keyteki/Keyteki.Client.git
