@@ -1,0 +1,11 @@
+{
+    "An account with that email already exists, please use another": "An account with that email already exists, please use another.",
+    "An account with that name already exists, please choose another": "An account with that name already exists, please choose another.",
+    "An error occurred registering your account.  Please try again later": "An error occurred registering your account.  Please try again later.",
+    "Passwords must have at least one digit ('0'-'9')": "Passwords must have at least one digit ('0'-'9').",
+    "Passwords must have at least one non alphanumeric character": "Passwords must have at least one non alphanumeric character.",
+    "Passwords must have at least one uppercase ('A'-'Z')": "Passwords must have at least one uppercase ('A'-'Z').",
+    "Please verify your account using the link in the email sent to the address you have provided": "Your account was successfully registered.  Please verify your account using the link in the email sent to the address you have provided.",
+    "Your account was successfully registered": "Your account was successfully registered",
+    "Your account was successfully registered, please verify your account using the link in the email sent to the address you have provided": "Your account was successfully registered.  Please verify your account using the link in the email sent to the address you have provided"
+}

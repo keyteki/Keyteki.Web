@@ -22,7 +22,7 @@ namespace Keyteki.Web
             Configuration = configuration;
         }
 
-        public IConfiguration Configuration { get; }
+        private IConfiguration Configuration { get; }
 
         public void ConfigureServices(IServiceCollection services)
         {
@@ -70,7 +70,6 @@ namespace Keyteki.Web
             app.UseSpa(spa =>
             {
                 spa.Options.SourcePath = "ClientApp";
-                
 
                 if (env.IsDevelopment())
                 {

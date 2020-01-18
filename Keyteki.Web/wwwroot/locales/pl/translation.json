@@ -1,0 +1,11 @@
+{
+    "An account with that email already exists, please use another": "Konto z tym adresem e-mail już istnieje, użyj innego.",
+    "An account with that name already exists, please choose another": "Konto o tej nazwie już istnieje, wybierz inne.",
+    "An error occurred registering your account.  Please try again later": "Wystąpił błąd podczas rejestracji konta. Spróbuj ponownie później.",
+    "Passwords must have at least one digit ('0'-'9')": "Hasła muszą mieć co najmniej jedną cyfrę („0” - „9”).",
+    "Passwords must have at least one non alphanumeric character": "Hasła muszą mieć co najmniej jeden znak alfanumeryczny.",
+    "Passwords must have at least one uppercase ('A'-'Z')": "Hasła muszą mieć co najmniej jedną wielką literę („A” - „Z”).",
+    "Please verify your account using the link in the email sent to the address you have provided": "Twoje konto zostało pomyślnie zarejestrowane. Sprawdź swoje konto za pomocą linku w wiadomości e-mail wysłanej na podany adres.",
+    "Your account was successfully registered": "Twoje konto zostało pomyślnie zarejestrowane",
+    "Your account was successfully registered, please verify your account using the link in the email sent to the address you have provided": "Twoje konto zostało pomyślnie zarejestrowane. Sprawdź swoje konto za pomocą linku w wiadomości e-mail wysłanej na podany adres"
+}

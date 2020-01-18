@@ -1,0 +1,11 @@
+{
+    "An account with that email already exists, please use another": "具有該電子郵件的帳戶已存在，請使用另一個。",
+    "An account with that name already exists, please choose another": "具有該名稱的帳戶已存在，請選擇另一個。",
+    "An error occurred registering your account.  Please try again later": "註冊您的帳戶時出錯。請稍後再試。",
+    "Passwords must have at least one digit ('0'-'9')": "密碼必須至少包含一位數字（“ 0”-“ 9”）。",
+    "Passwords must have at least one non alphanumeric character": "密碼必須至少包含一個非字母數字字符。",
+    "Passwords must have at least one uppercase ('A'-'Z')": "密碼必須至少包含一個大寫字母（'A'-'Z'）。",
+    "Please verify your account using the link in the email sent to the address you have provided": "您的帳戶已成功註冊。請使用發送到您提供的地址的電子郵件中的鏈接驗證您的帳戶",
+    "Your account was successfully registered": "您的帳戶已成功註冊",
+    "Your account was successfully registered, please verify your account using the link in the email sent to the address you have provided": "您的帳戶已成功註冊。請使用發送到您提供的地址的電子郵件中的鏈接驗證您的帳戶"
+}

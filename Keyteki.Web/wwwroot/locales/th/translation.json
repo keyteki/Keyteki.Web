@@ -1,0 +1,11 @@
+{
+    "An account with that email already exists, please use another": "มีบัญชีที่ใช้อีเมลนี้แล้วโปรดใช้อีกบัญชีหนึ่ง",
+    "An account with that name already exists, please choose another": "มีบัญชีที่ใช้ชื่อนั้นแล้วโปรดเลือกชื่ออื่น",
+    "An error occurred registering your account.  Please try again later": "เกิดข้อผิดพลาดในการลงทะเบียนบัญชีของคุณ กรุณาลองใหม่อีกครั้งในภายหลัง.",
+    "Passwords must have at least one digit ('0'-'9')": "รหัสผ่านต้องมีอย่างน้อยหนึ่งหลัก ('0' - '9')",
+    "Passwords must have at least one non alphanumeric character": "รหัสผ่านต้องมีอักขระที่ไม่ใช่ตัวอักษรและตัวเลขอย่างน้อยหนึ่งตัว",
+    "Passwords must have at least one uppercase ('A'-'Z')": "รหัสผ่านต้องมีตัวพิมพ์ใหญ่อย่างน้อยหนึ่งตัว ('A' - 'Z')",
+    "Please verify your account using the link in the email sent to the address you have provided": "บัญชีของคุณได้รับการลงทะเบียนเรียบร้อยแล้ว โปรดยืนยันบัญชีของคุณโดยใช้ลิงก์ในอีเมลที่ส่งไปยังที่อยู่ที่คุณให้ไว้",
+    "Your account was successfully registered": "บัญชีของคุณได้รับการลงทะเบียนเรียบร้อยแล้ว",
+    "Your account was successfully registered, please verify your account using the link in the email sent to the address you have provided": "บัญชีของคุณได้รับการลงทะเบียนเรียบร้อยแล้ว โปรดยืนยันบัญชีของคุณโดยใช้ลิงก์ในอีเมลที่ส่งไปยังที่อยู่ที่คุณให้ไว้"
+}
