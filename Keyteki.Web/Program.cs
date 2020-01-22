@@ -58,6 +58,7 @@ namespace Keyteki.Web
                     webBuilder.ConfigureLogging(logging =>
                         {
                             logging.ClearProviders();
+                            logging.AddConsole();
                             logging.SetMinimumLevel(LogLevel.Trace);
                         })
                         .UseNLog();

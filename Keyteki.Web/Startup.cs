@@ -65,7 +65,6 @@ namespace Keyteki.Web
 
             app.UseStaticFiles();
             app.UseHttpsRedirection();
-            app.UseAuthentication();
 
             app.UseSpa(spa =>
             {
