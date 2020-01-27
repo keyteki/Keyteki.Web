@@ -24,33 +24,7 @@ namespace Keyteki.Web
 
         private IConfiguration Configuration { get; }
 
-        public void ConfigureServices(IServiceCollection services)
-        {
-            var general = Configuration.GetSection("General").Get<GametekiApiOptions>();
-
-            if (general.DatabaseProvider == "mssql")
-            {
-                services.AddDbContext<KeytekiDbContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-            }
-            else
-            {
-                services.AddDbContext<KeytekiDbContext>(options =>
-                    options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
-            }
-
-            services.AddGameteki(Configuration);
-
-            services.AddTransient<IKeytekiDbContext, KeytekiDbContext>();
-            services.AddTransient<IUserService, KeytekiUserService>();
-
-            services.AddSpaStaticFiles(configuration =>
-            {
-                configuration.RootPath = "ClientApp/build";
-            });
-        }
-
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public static void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
@@ -74,6 +48,32 @@ namespace Keyteki.Web
                 {
                     spa.UseReactDevelopmentServer("start");
                 }
+            });
+        }
+
+        public void ConfigureServices(IServiceCollection services)
+        {
+            var general = Configuration.GetSection("General").Get<GametekiApiOptions>();
+
+            if (general.DatabaseProvider == "mssql")
+            {
+                services.AddDbContext<KeytekiDbContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            }
+            else
+            {
+                services.AddDbContext<KeytekiDbContext>(options =>
+                    options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
+            }
+
+            services.AddGameteki(Configuration);
+
+            services.AddTransient<IKeytekiDbContext, KeytekiDbContext>();
+            services.AddTransient<IUserService, KeytekiUserService>();
+
+            services.AddSpaStaticFiles(configuration =>
+            {
+                configuration.RootPath = "ClientApp/build";
             });
         }
     }
