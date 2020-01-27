@@ -35,6 +35,8 @@ namespace Keyteki.Web
                     catch (Exception ex)
                     {
                         logger.Error(ex, "An error occurred seeding the database.");
+
+                        throw;
                     }
                 }
 
@@ -43,6 +45,8 @@ namespace Keyteki.Web
             catch (Exception ex)
             {
                 logger.Error(ex, "An error occurred starting the website");
+
+                throw;
             }
             finally
             {
