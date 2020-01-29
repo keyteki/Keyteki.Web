@@ -1,6 +1,8 @@
 namespace Keyteki.Web
 {
     using System;
+    using System.Threading.Tasks;
+    using CrimsonDev.Gameteki.Data;
     using Keyteki.Data;
     using Microsoft.AspNetCore.Hosting;
     using Microsoft.EntityFrameworkCore;
@@ -11,7 +13,7 @@ namespace Keyteki.Web
 
     public static class Program
     {
-        public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
             var logger = NLogBuilder.ConfigureNLog("nlog.config").GetCurrentClassLogger();
 
@@ -27,10 +29,9 @@ namespace Keyteki.Web
                     {
                         var context = services.GetRequiredService<KeytekiDbContext>();
                         context.Database.Migrate();
-/*
-                        await SeedData.Initialize(scope, context);
-                        await ThronetekiSeedData.Initialize(services);
-*/
+                        await SeedData.Initialize(scope, context).ConfigureAwait(false);
+
+                        // await ThronetekiSeedData.Initialize(services);
                     }
                     catch (Exception ex)
                     {
