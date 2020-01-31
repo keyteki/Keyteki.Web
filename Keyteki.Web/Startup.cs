@@ -51,15 +51,6 @@ namespace Keyteki.Web
                     spa.UseReactDevelopmentServer("start");
                 }
             });
-
-            var forwardingOptions = new ForwardedHeadersOptions()
-            {
-                ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
-            };
-            forwardingOptions.KnownNetworks.Clear(); //Loopback by default, this should be temporary
-            forwardingOptions.KnownProxies.Clear(); //Update to include
-
-            app.UseForwardedHeaders(forwardingOptions);
         }
 
         public void ConfigureServices(IServiceCollection services)
