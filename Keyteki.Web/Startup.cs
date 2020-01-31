@@ -38,6 +38,7 @@ namespace Keyteki.Web
             app.UseGameteki();
 
             app.UseStaticFiles();
+            app.UseSpaStaticFiles();
             app.UseHttpsRedirection();
 
             app.UseSpa(spa =>
