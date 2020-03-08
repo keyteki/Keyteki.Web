@@ -46,7 +46,6 @@ namespace Keyteki.Web
             catch (Exception ex)
             {
                 logger.Error(ex, "An error occurred starting the website");
-
                 throw;
             }
             finally
